@@ -84,7 +84,7 @@ server.put('/api/users/:id', (req, res) => {
     })
 })
 
-server.use('/', (req, res) => {
+server.get('/', (req, res) => {
     res.json({ 
         message: "Hello world!",
         port: process.env.PORT
