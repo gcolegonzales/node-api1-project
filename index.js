@@ -84,4 +84,14 @@ server.put('/api/users/:id', (req, res) => {
     })
 })
 
-server.listen(7000, () => console.log('Server is listening...'));
+server.use('/', (req, res) => {
+    res.json({ 
+        message: "Hello world!",
+        port: process.env.PORT
+    })
+})
+
+const host = process.env.HOST || "0.0.0.0"
+const port = process.env.PORT || 8000
+
+server.listen(7000, () => console.log(`Server is listening on port ${port}...`));
