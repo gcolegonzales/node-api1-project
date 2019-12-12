@@ -92,6 +92,6 @@ server.get('/', (req, res) => {
 })
 
 const host = process.env.HOST || "0.0.0.0"
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8080
 
-server.listen(7000, () => console.log(`Server is listening on port ${port}...`));
+server.listen(port, () => console.log(`Server is listening on port ${port}...`));
