@@ -4,8 +4,8 @@
   "description": "Node API 1 Project Starter Code",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon -r dotenv/config index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "nodemon -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
